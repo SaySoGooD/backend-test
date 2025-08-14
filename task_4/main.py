@@ -41,12 +41,6 @@ async def main(config):
 
 
 if __name__ == "__main__":
-    """
-    Точка входа в приложение.
-
-    Настраивает логирование, создаёт конфигурацию базы данных и запускает
-    асинхронную функцию main.
-    """
     configure(logging.INFO)
     config = DatabaseConfig(
         host="localhost",
